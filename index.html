@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./src/output.css" rel="stylesheet" />
+    <title>Document</title>
+  </head>
+  <body class="afl-body">
+    <header class="afl-header">
+      <a href="/" class="afl-header__back-button">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none">
+          <path
+            fill="currentColor"
+            d="M14.24 16.32 9.88 12l4.29-4.29a.998.998 0 0 0 0-1.42 1 1 0 0 0-1.41 0l-5 5a1 1 0 0 0 0 1.41l5.07 5.07a1 1 0 0 0 1.41 0 1 1 0 0 0 0-1.45Z"
+          />
+        </svg>
+      </a>
+      <h1 class="afl-header__title">Profile</h1>
+    </header>
+
+    <main class="afl-main">
+      <aside class="afl-sidebar">
+        <section>
+          <div class="flex items-center justify-between">
+            <div>
+              <h2 class="afl-heading-1">Barry Bluejeans</h2>
+              <p class="afl-eyebrow">policyholder</p>
+            </div>
+            <div>
+              <div class="afl-icon afl-icon--info"></div>
+            </div>
+          </div>
+        </section>
+      </aside>
+
+      <!-- Error Alert -->
+      <div class="afl-alert afl-alert--error" role="alert">
+        <div class="afl-alert__icon"></div>
+        <div class="afl-alert__content">
+          <strong>There is a problem.</strong>
+          <p>Incorrect details entered. Please re-enter the correct details to continue.</p>
+        </div>
+        <button class="afl-alert__close" aria-label="Dismiss">&times;</button>
+      </div>
+
+      <!-- Success Alert -->
+      <div class="afl-alert afl-alert--success" role="alert">
+        <div class="afl-alert__icon"></div>
+        <div class="afl-alert__content">
+          <strong>Successfully Uploaded</strong>
+          <p>Your attachments have been successfully uploaded</p>
+        </div>
+        <button class="afl-alert__close" aria-label="Dismiss">&times;</button>
+      </div>
+
+      <!-- Info Alert -->
+      <div class="afl-alert afl-alert--info" role="alert">
+        <div class="afl-alert__icon"></div>
+        <div class="afl-alert__content">
+          <strong>New attachments available</strong>
+          <p>Your attachments have been successfully uploaded</p>
+        </div>
+        <button class="afl-alert__close" aria-label="Dismiss">&times;</button>
+      </div>
+    </main>
+
+    <footer></footer>
+  </body>
+</html>
